@@ -6,6 +6,6 @@ try:
         N = int(input())
         N = N -1 
         d = pow(2, N, p)
-        print(f)
+        print(d)
 except:
     pass

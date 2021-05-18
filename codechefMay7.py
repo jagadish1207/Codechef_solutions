@@ -1,9 +1,9 @@
 try:
-    def hcfnaive(a,b):
-        if(b==0):
-            return a
+    def gcd(i1,i2):
+        if(i2==0):
+            return i1
         else:
-            return hcfnaive(b,a%b)
+            return gcd(i2,i1%i2)
     t = int(input())
     while(t>0):
         t-=1
@@ -15,9 +15,9 @@ try:
             l.append(K+(te*te))
             te+=1
         for i in range(0,len(l)-1):
-            res+=hcfnaive(l[i],l[i+1])
+            res+=gcd(l[i],l[i+1])
     
-    print(res)
+        print(res)
 
 except:
     pass
